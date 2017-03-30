@@ -706,4 +706,24 @@ object {
   display: block; }
 
 body {
-  background: #00cc99; }
+  background: #0f1318; }
+
+header {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 21px solid #d90c00;
+  background: url("./img/header-bg.png") center no-repeat #0f1318; }
+
+.main-navigation .current-menu-item {
+  background: #d90c00; }
+
+.main-navigation li {
+  max-height: 101px;
+  max-width: 135px; }
+  .main-navigation li a {
+    color: #fff;
+    font: 400 2.5em 'Pathway Gothic One';
+    text-transform: uppercase;
+    padding: 1.5em 1em; }
+  .main-navigation li:hover {
+    background: #d90c00; }

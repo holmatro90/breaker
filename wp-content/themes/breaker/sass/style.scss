@@ -108,5 +108,53 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 body {
-  background: #00cc99;
+  background: #0f1318;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 21px solid #d90c00;
+  background: url("./img/header-bg.png") center no-repeat #0f1318;
+}
+.main-navigation {
+  .current-menu-item {
+    background: #d90c00;
+  }
+  li {
+    max-height: 101px;
+    max-width: 135px;
+    a {
+      color: #fff;
+      font: 400 2.5em 'Pathway Gothic One';
+      text-transform: uppercase;
+      padding: 1.5em 1em;
+    }
+    &:hover {
+      background: #d90c00;
+    }
+  }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 281px) and (max-width: 767px){
+
+}
+
+
+@media screen and (max-width:1680px) and (min-width:768px) {
+
+
+}
+
+@media screen and (max-width:1169px) and (min-width:993px) {
+
+}
+
+@media screen and (max-width: 993px) and (min-width:768px){
+
 }

@@ -67,6 +67,15 @@ function breaker_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	$args = array(
+		'flex-width'    => true,
+		'width'         => 707,
+		'flex-width'    => true,
+		'height'        => 381,
+		'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	);
+	add_theme_support( 'custom-header', $args );
 }
 endif;
 add_action( 'after_setup_theme', 'breaker_setup' );
