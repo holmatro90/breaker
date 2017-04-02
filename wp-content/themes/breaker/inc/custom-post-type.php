@@ -65,8 +65,8 @@ register_post_type('videos', array(
 //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
 		'hierarchical'        => true,
 		'supports'            => array('title','editor','custom-fields','thumbnail','tag'), // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
-		'taxonomies'          => array('contacts'),
-		'has_archive'         => true,
+		'taxonomies'          => array(),
+		'has_archive'         => null,
 		'rewrite'             => true,
 		'query_var'           => true,
 	) );
@@ -116,5 +116,3 @@ $args = array(
 );
 register_taxonomy('directors', array('videos'), $args );
 }
-
-

@@ -762,3 +762,88 @@ header {
           margin-bottom: 1em; }
         .video-section .new-video li a:hover {
           text-decoration: none; }
+
+.list-of-directors {
+  display: inline-block;
+  padding-left: 0; }
+  .list-of-directors li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 3em 0;
+    border-top: 2px solid #d61919;
+    border-bottom: 2px solid #d61919; }
+    .list-of-directors li h3 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center; }
+    .list-of-directors li a {
+      color: #b5cbd1;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      text-align: center; }
+      .list-of-directors li a span {
+        color: #d61919; }
+
+.block {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919; }
+  .block h3 {
+    color: #d61919;
+    font: 400 4em 'Pathway Gothic One';
+    text-transform: uppercase;
+    border-bottom: 2px dashed #b5cbd1;
+    display: inline-block;
+    text-align: center; }
+  .block .about-directed p {
+    color: #b5cbd1;
+    font: 300 2em 'Open Sans Condensed'; }
+  .block .about-directed .directed-work {
+    font: 400 3em 'Open Sans Condensed';
+    text-transform: uppercase;
+    color: #b5cbd1; }
+    .block .about-directed .directed-work a {
+      color: #d61919; }
+
+.contact-section {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919; }
+  .contact-section li {
+    display: inline-block;
+    text-align: center; }
+    .contact-section li h4 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center; }
+    .contact-section li address h6 {
+      color: #ffffff;
+      font: 400 3em 'Pathway Gothic One';
+      text-transform: uppercase;
+      display: inline-block;
+      text-align: center; }
+    .contact-section li address p {
+      color: #ffffff;
+      font: 400 2.5em 'Open Sans Condensed';
+      text-transform: uppercase;
+      margin-bottom: 0; }
+      .contact-section li address p a {
+        color: #ffffff; }
+
+@media screen and (min-width: 281px) and (max-width: 767px) {
+  .list-of-directors li h3 {
+    font: 400 1.5em 'Pathway Gothic One'; }
+  .list-of-directors li a {
+    font: 400 1.5em 'Pathway Gothic One'; } }

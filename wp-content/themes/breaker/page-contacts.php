@@ -8,7 +8,7 @@ get_header(); ?>
                 <div class="row">
                     <h2 class="page-title"><?php echo get_the_title(); ?></h2>
                     <div class="contacts">
-                        <ul class="row">
+                        <ul class="contact-section row">
 	                        <?php
 	                        $args = array(
 		                        'post_type' => 'Contacts',
@@ -18,21 +18,21 @@ get_header(); ?>
 	                        if ($contactPosts->have_posts()) :
 		                        while ($contactPosts->have_posts()) : $contactPosts->the_post();
 			                        ?>
-                                    <li class="col-xs-12 col-sm-4 ">
+                                    <li class=" col-sm-4 ">
                                         <?php echo get_the_content() ?>
                                         <h4><?php echo get_the_title()?></h4>
                                         <address>
 	                                        <h6><?php echo get_post_meta(get_the_ID(), 'Name of contact', true); ?></h6>
 	                                        <p><?php echo get_post_meta(get_the_ID(), 'Adress of contact', true); ?></p>
-                                            <p><a href="callto:<?php echo get_post_meta(get_the_ID(), 'Phone of contact', true); ?>"><?php echo get_post_meta(get_the_ID(), 'Phone of contact', true); ?></a></p>
-                                            <p><a href="callto:<?php echo get_post_meta(get_the_ID(), 'Fax of contact', true); ?>"><?php echo get_post_meta(get_the_ID(), 'Fax of contact', true); ?></a></p>
+                                            <p>O <a href="callto:<?php echo get_post_meta(get_the_ID(), 'Phone of contact', true); ?>"><?php echo get_post_meta(get_the_ID(), 'Phone of contact', true); ?></a></p>
+                                            <p>F <a href="callto:<?php echo get_post_meta(get_the_ID(), 'Fax of contact', true); ?>"><?php echo get_post_meta(get_the_ID(), 'Fax of contact', true); ?></a></p>
                                             <p><a href="mailto:<?php echo get_post_meta(get_the_ID(), 'Email', true); ?>"><?php echo get_post_meta(get_the_ID(), 'Email', true); ?></a></p>
                                         </address>
                                     </li>
 		                        <?php endwhile; ?>
 
 	                        <?php endif;
-	                        wp_reset_postdata();
+
 	                        ?>
                         </ul>
                     </div>

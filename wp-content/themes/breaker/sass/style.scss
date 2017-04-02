@@ -176,12 +176,114 @@ header {
     }
   }
 }
+.list-of-directors {
+  display: inline-block;
+  padding-left: 0;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 3em 0;
+    border-top: 2px solid #d61919;
+    border-bottom: 2px solid #d61919;
+    h3 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center;
 
+    }
+    a {
+      color: #b5cbd1;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      text-align: center;
+      span {
+        color: #d61919;
+      }
 
+    }
+  }
 
+}
+.block {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919;
+  h3 {
+    color: #d61919;
+    font: 400 4em 'Pathway Gothic One';
+    text-transform: uppercase;
+    border-bottom: 2px dashed #b5cbd1;
+    display: inline-block;
+    text-align: center;
+
+  }
+  .about-directed {
+    p {
+      color: #b5cbd1;
+      font: 300 2em 'Open Sans Condensed';
+    }
+    .directed-work {
+      font: 400 3em 'Open Sans Condensed';
+      text-transform: uppercase;
+      color: #b5cbd1;
+      a {
+        color: #d61919;
+      }
+    }
+  }
+}
+
+.contact-section {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919;
+  li {
+    display: inline-block;
+    text-align: center;
+    h4 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center;
+    }
+    address {
+      h6 {
+        color: #ffffff;
+        font: 400 3em 'Pathway Gothic One';
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+        font: 400 2.5em 'Open Sans Condensed';
+        text-transform: uppercase;
+        margin-bottom: 0;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 281px) and (max-width: 767px){
+  .list-of-directors {
+    li {
+      h3 {
+        font: 400 1.5em 'Pathway Gothic One';
+              }
+      a {
+        font: 400 1.5em 'Pathway Gothic One';
+      }
+    }
 
+  }
 }
 
 
