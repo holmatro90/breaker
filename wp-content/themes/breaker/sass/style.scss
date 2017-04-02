@@ -108,5 +108,194 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 body {
-  background: #00cc99;
+  background: #0f1318;
+  padding-bottom: 4em;
+}
+header {
+  width: 98.9vw;
+  height: 100vh;
+  border-bottom: 21px solid #d90c00;
+  background: url("./img/header-bg.png") center no-repeat #0f1318;
+}
+.main-navigation {
+  .menu-toggle {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+  }
+  .current-menu-item {
+    background: #d90c00;
+  }
+  li {
+    max-height: 101px;
+    min-width: 135px;
+    text-align: center;
+    a {
+      color: #fff;
+      font: 400 2.5em 'Pathway Gothic One';
+      text-transform: uppercase;
+      padding: 1.5em 1em;
+    }
+    &:hover {
+      background: #d90c00;
+    }
+  }
+}
+
+.text-widget {
+  padding: 2em 0;
+  .textwidget {
+    font: 300 3em 'Open Sans Condensed';
+    color: #b5cbd1;
+  }
+}
+.page-title {
+  font: 400 4em 'Pathway Gothic One';
+  color: #b5cbd1;
+  text-transform: uppercase;
+}
+.video-section {
+  background: #000000;
+  margin-top: 4em;
+  padding: 2em 2em 0 2em;
+  .new-video {
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin-bottom: 2em;
+      a {
+        color: #ffffff;
+        font: 300 1.5em 'Open Sans Condensed';
+        img {
+          margin-bottom: 1em;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.list-of-directors {
+  display: inline-block;
+  padding-left: 0;
+  li {
+    display: flex;
+    align-items: center;
+    padding: 3em 0;
+    border-top: 2px solid #d61919;
+    border-bottom: 2px solid #d61919;
+    h3 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center;
+
+    }
+    a {
+      color: #b5cbd1;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      text-align: center;
+      span {
+        color: #d61919;
+      }
+
+    }
+  }
+
+}
+.block {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919;
+  h3 {
+    color: #d61919;
+    font: 400 4em 'Pathway Gothic One';
+    text-transform: uppercase;
+    border-bottom: 2px dashed #b5cbd1;
+    display: inline-block;
+    text-align: center;
+
+  }
+  .about-directed {
+    p {
+      color: #b5cbd1;
+      font: 300 2em 'Open Sans Condensed';
+    }
+    .directed-work {
+      font: 400 3em 'Open Sans Condensed';
+      text-transform: uppercase;
+      color: #b5cbd1;
+      a {
+        color: #d61919;
+      }
+    }
+  }
+}
+
+.contact-section {
+  padding: 3em 0;
+  border-top: 2px solid #d61919;
+  border-bottom: 2px solid #d61919;
+  li {
+    display: inline-block;
+    text-align: center;
+    h4 {
+      color: #d61919;
+      font: 400 4em 'Pathway Gothic One';
+      text-transform: uppercase;
+      border-bottom: 2px dashed #b5cbd1;
+      display: inline-block;
+      text-align: center;
+    }
+    address {
+      h6 {
+        color: #ffffff;
+        font: 400 3em 'Pathway Gothic One';
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+      }
+      p {
+        color: #ffffff;
+        font: 400 2.5em 'Open Sans Condensed';
+        text-transform: uppercase;
+        margin-bottom: 0;
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 281px) and (max-width: 767px){
+  .list-of-directors {
+    li {
+      h3 {
+        font: 400 1.5em 'Pathway Gothic One';
+              }
+      a {
+        font: 400 1.5em 'Pathway Gothic One';
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width:1680px) and (min-width:768px) {
+
+
+}
+
+@media screen and (max-width:1169px) and (min-width:993px) {
+
+}
+
+@media screen and (max-width: 993px) and (min-width:768px){
+
 }

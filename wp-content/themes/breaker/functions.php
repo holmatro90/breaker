@@ -67,6 +67,15 @@ function breaker_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	$args = array(
+		'flex-width'    => true,
+		'width'         => 707,
+		'flex-width'    => true,
+		'height'        => 381,
+		'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	);
+	add_theme_support( 'custom-header', $args );
 }
 endif;
 add_action( 'after_setup_theme', 'breaker_setup' );
@@ -97,6 +106,15 @@ function breaker_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Text Widget 1', 'breaker' ),
+		'description'   => __( 'Appears on section', 'breaker' ),
+		'id'            => 'main-1',
+		'before_widget' => '<div id="%1$s" class="text-widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'breaker_widgets_init' );
@@ -132,6 +150,9 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
+
+require get_template_directory() . '/inc/custom-post-type.php';
+
 /**
  * Customizer additions.
  */
@@ -141,3 +162,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
